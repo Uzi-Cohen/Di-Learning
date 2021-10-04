@@ -1,0 +1,19 @@
+   body {
+    background-color: antiquewhite;
+  }
+  h1 {
+    color: blue;
+      font-style: italic;
+  }
+  h3 {
+    color: blue;
+      font-style: oblique;
+  }
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    height: 0px;
+    width: 5%;
+  }
