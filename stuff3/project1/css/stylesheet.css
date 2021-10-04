@@ -1,0 +1,28 @@
+.h31 {
+  text-indent: 50px;
+}
+.h33 {
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border: 5px solid orange;
+}
+div {
+  width: 50%;
+  border: 1px solid red;
+  text-align: center;
+  margin-left: 20%;
+}
+.p2 {
+  font-size: 10px;
+}
+table, th, td {
+  border: 1px solid black;
+  width: 50%;
+  text-align: center;
+  margin-left: 20%;
+}
