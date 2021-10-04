@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  height: 100%
+}
+
+.login, .register {
+  width: 50%
+}
+
+.login {
+  float: left;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.login h1 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #eeeeef;
+}
+
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.login span {
+  float: left
+}
+
+.login a {
+  float: right;
+  text-decoration: none;
+  color: #000;
+}
+
+.login a:hover {
+  color: blue;
+  font-weight: bold
+}
+
+.login button {
+  width: 100%;
+  margin: 30px 0;
+  padding: 10px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  width: 95%;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+.login hr {
+  width: 33%;
+  display: inline-block
+}
+
+.login p {
+  display: inline-block;
+  margin: 0px 10px 30px;
+}
+
+.login ul {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.login ul li {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.login {
+  display: inline-block;
+  float: none;
+}
+
+.register {
+  float: right;
+ background: linear-gradient(45deg, red, blue);
+  height: 100%;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.register h2 {
+  margin: 30px 0;
+  font-size: 50px;
+  letter-spacing: 3px
+}
+
+.register p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.register button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.register button:hover {
+  color: #blue;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.icon {
+  color: black;
+}
