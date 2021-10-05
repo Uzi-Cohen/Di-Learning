@@ -1,0 +1,126 @@
+body{
+  text-align: center;
+}
+.head, 
+.left-arm, 
+.torso, 
+.right-arm, 
+.left-leg, 
+.right-leg {
+	 background-color: #0b2630;
+}
+.robot {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+.head:hover{
+  width: 300px;
+  transition: 1s ease-in-out;
+}
+.eyes {
+	display: flex
+}
+.upper-body { 
+	width: 300px; 
+	height: 150px;
+  display: flex; 
+	
+} 
+
+.left-arm, .right-arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left-arm { 
+	 
+  
+  margin-right:20px;
+  
+} 
+.left-arm:hover{
+  transform: rotate(50deg);
+}
+
+.right-arm { 
+	margin-left: 20px; 
+  
+} 
+
+.right-arm:hover{
+  transform: rotate(-50deg);
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+
+  
+}
+.lower-body { 
+	width: 200px; 
+	height: 200px;
+	
+	margin: 0 auto;
+  display: flex; 
+
+} 
+.left-leg, .right-leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+  
+  
+} 
+.left-leg{
+  margin-left: 45px;
+  
+}
+.right-leg{
+  margin-left: 30px;
+  
+  
+}
+.left-eye, .right-eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: black;  
+} 
+.left-eye { 
+ 
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+.right-eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
+.left-leg:hover {
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+  
+}
+.right-leg:hover{
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+}
