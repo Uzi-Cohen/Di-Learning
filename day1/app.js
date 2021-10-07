@@ -24,4 +24,5 @@ fruits.push('Kiwi')
 fruits.reverse()
 
 let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-moreFruits[2]
+moreFruits[1][2]
+console.log('Oranges')
