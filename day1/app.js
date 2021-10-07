@@ -26,3 +26,5 @@ fruits.reverse()
 let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 moreFruits[1][2]
 console.log('Oranges')
+
+
