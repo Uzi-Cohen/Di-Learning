@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Drawing Game</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+		<div class="tool-bar">
+			<div class="first-wrapper">
+				<div class="clear-buttons">
+					<button class="reset-btn btn ">
+              <i class="fas fa-redo-alt"></i>
+            </button>
+
+            <button class="clear-btn btn">
+              <i class="fas fa-eraser"></i>
+            </button>
+          </div>
+
+          <div class="slider-container">
+            <label class="num-of-cells-label" for="num-of-cells"></label>
+            <input
+              type="range"
+              name="num-of-cells"
+              min="10"
+              max="100"
+              step="10"
+              value="30"
+              class="slider"
+            />
+          </div>
+        </div>
+
+        <ul class="color-palette">
+          <li class="red"></li>
+          <li class="orange"></li>
+          <li class="yellow"></li>
+          <li class="green"></li>
+          <li class="blue"></li>
+          <li class="purple"></li>
+          <li class="black"></li>
+          <li class="brown"></li>
+        </ul>
+      </div>
+
+      <div class="color-grid"></div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
