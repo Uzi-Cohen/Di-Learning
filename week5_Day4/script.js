@@ -7,6 +7,8 @@
 // Promise.all([promise1, promise2, promise3])
 // .then(values => {
 //   console.log(values)
-// }).catch(() => console.log('yikes'));
+// Promise.allSettled([promise1,promise2, promise3, promise4])
+// .then(result => console.log(result))
+// .catch(error => console.log(error));
 //
 //exercises
