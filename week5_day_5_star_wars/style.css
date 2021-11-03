@@ -1,0 +1,35 @@
+body {
+	background-image: url("stars.webp");
+	font-family: calibri;
+	margin:0;
+	padding: 30px;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+}
+
+img {
+	width: 400px;
+}
+
+#displayDiv {
+	border: 2px solid yellow;
+	border-radius: 15px;
+	width: 500px;
+	height: 300px;
+	color: yellow;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+button {
+	display: block;
+	margin: 10px auto 0;
+}
