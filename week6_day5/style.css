@@ -1,0 +1,158 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 2rem;
+}
+
+body, input, button {
+	font-family: calibri;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 0;
+}
+
+.header {
+	font-weight: 600;
+}
+
+.start,.finish {
+	grid-column: span 2;
+}
+
+.completed {
+	color:#A5A2BA;
+}
+
+.delete i {
+	opacity: 0;
+	transition: opacity .1s;
+}
+
+.delete:hover i {
+	opacity: 1;
+}
+
+#mainInputs,#list {
+	display: grid;
+	grid-template-columns: 1.5em 1.5em 300px 7.2em 6em 7.2em 6em 4em 4em;
+	width: 100%;
+	gap:10px 30px;
+}
+
+#mainInputs,#list,#graph {
+	margin-top:1rem;
+}
+
+
+input {
+	width:100%;
+	border:none;
+	outline: none;
+	padding: 0 0 .1em 0;
+	height: 1em;
+	font-style: oblique;
+}
+
+input[type="text"] {
+	border-bottom: 2px solid #10ffa3;
+}
+
+button {
+	color:;
+}
+
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /*display: none;*/
+    /*-webkit-appearance: none;*/
+    margin-right:-.8em;
+	padding:0;
+}
+
+input[type="time"]::-webkit-inner-spin-button,
+xinput[type="time"]::-webkit-calendar-picker-indicator {
+    /*background: none;*/
+    /*margin-right:-.8em;*/
+	padding:0;}
+
+#inputDesc {
+	width:100%;
+}
+
+
+.desc {
+	grid-column: 3 / span 5;
+	min-height: 1em;
+}
+
+
+.checkbox {
+	grid-column-start: 1
+}
+
+
+.checkbox.completed i:first-child,
+.checkbox:not(.completed) i:last-child,
+.checkbox:not(.completed):hover i:first-child {
+	display: none;
+}
+
+.checkbox.completed i:last-child,
+.checkbox:not(.completed) i:first-child,
+.checkbox:not(.completed):hover i:last-child {
+	display: inline;
+}
+
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	color: transparent;
+}
+
+.late.editable, .late.remaining {
+	color: red;
+}
+
+.alternate {
+	/*background-color: aliceblue;*/
+}
+
+
+#graph {
+	display: grid;
+	width: 1050px;
+	grid-template-columns: repeat(7,120px);
+	position: relative;
+	text-align: center;
+	/*overflow: hidden;*/
+}
+
+#graph div {
+    border: 1px solid gray;
+}
+
+#graph div:not(:first-child) {
+	border-left: none;
+}
+
+.task {
+	position: absolute;
+	background-color: aquamarine;
+	border-radius: 30px;
+}
+
+
+
+
+
