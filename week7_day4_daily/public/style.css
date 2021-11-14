@@ -1,0 +1,26 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 30px 40px;
+	font-family: calibri;
+}
+
+h2 {
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 0;
+}
+
+body > div {
+	width: 20rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 5px;
+    align-content: start;
+}
+
+
+
