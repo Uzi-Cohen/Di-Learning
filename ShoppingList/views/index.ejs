@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My shopping List</h1>
+    <label for="item">Item</label>
+    <input type="text" name="item" id="item" required><br>
+    <label for="amount">Amout</label>
+    <input type="number" id="amount" required><br>
+    <button id="myBtn">Button</button>
+    <div id="container">
+      <% items.forEach((it, i) => { %>
+        <p><%= it.item %> <%= it.amount %></p>
+      <% }); %>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      let button = document.getElementById('myBtn');
+      button.addEventListener('click', addItem);
+
+
+      function addItem(){
+        let obj = {
+          item : document.getElementById('item').value,
+          amount : document.getElementById('amount').value
+        }
+        obj = JSON.stringify(obj);
+        console.log("add item", obj);
+
+        fetch('http://localhost:3000', {
+            method:'POST',
+            headers: {
+                'Content-type':'application/json'
+            },
+            body: obj
+        })
+        .then((e)=>{
+          window.location.replace('http://localhost:3000/');
+        } 
+        )
+        .catch((e) => console.log(e))
+      }
+    </script>
+</body>
+</html>
+
+
