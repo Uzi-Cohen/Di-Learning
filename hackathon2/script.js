@@ -4,7 +4,7 @@
 Array.prototype.last = function () {
   return this[this.length - 1];
 };
-
+//famous last words before i lost my mind figuring it out
 // A sinus function that acceps degrees instead of radians
 Math.sinus = function (degree) {
   return Math.sin((degree / 180) * Math.PI);
