@@ -1,0 +1,107 @@
+:root {
+  --darkgray: #3c3c3c;
+  --lightgray: #eef0f1;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a, #movie a {
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 3rem;
+  font-size: 1rem;
+}
+
+
+nav,footer {
+  width: 100%;
+  background: var(--darkgray);
+  padding: .5rem;
+  color: white;
+  box-sizing: border-box;
+}
+
+#searchform {
+  background: var(--lightgray);
+  margin: 2rem 5rem;
+  padding: .5rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: .5rem;
+}
+
+#moviescontainer {
+  padding: .5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat( auto-fit, 230px);
+}
+
+.card {
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: .5rem;
+  background: var(--darkgray);
+  color: white;
+  align-content: start;
+}
+
+.card img {
+  width: 100%;
+}
+
+#movie {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 2rem;
+  margin: 2rem 5rem;
+}
+
+#movie div:last-child {
+  background: var(--darkgray);
+  grid-column: span 2;
+  color: white;
+  padding: .5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  background: var(--lightgray);
+  border: 2px solid var(--lightgray);
+}
+
+li {
+  background: white;
+  padding: .2rem .3rem;
+    /*border: 1px solid var(--lightgray);*/
+
+}
+
+.links {
+  display: grid;
+  content: center;
+  justify-content: center;
+  grid-template-columns: max-content max-content;
+  gap: 2rem;
+}
+
