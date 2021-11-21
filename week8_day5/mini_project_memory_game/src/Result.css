@@ -1,0 +1,13 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: red;
+    color: white;
+}
+
+#scores{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}

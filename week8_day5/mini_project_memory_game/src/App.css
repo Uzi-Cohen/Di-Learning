@@ -1,0 +1,11 @@
+#rules{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left top,#00f,red) 50% fixed;
+  background-size: cover;
+  color: white;
+  height: 50px;
+  text-shadow: 0.25px 0.25px 0.25px #000;
+  width: 100%;
+  border-top: solid 8px lightgray;
+}
